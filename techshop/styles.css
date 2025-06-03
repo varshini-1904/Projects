@@ -1,6 +1,7 @@
 
-*{
+body{
     background-color: rgb(43, 42, 42);
+    color: white;
 }
 header{
     display: flex;
@@ -18,6 +19,10 @@ header h2{
     margin: 0px 30px;
 }
 
+.carousel-item{
+    height: 750px;
+}
+
 .carousel-item h2, .carousel-item p{
     color: white;
 }
@@ -32,3 +37,78 @@ header h2{
     color: white;
     border: none;
 }
+
+.carousel-item img{
+    height: 650px;
+    margin: auto 60%;
+}
+.carousel-item .productdetails {
+    width: 500px;
+    position: relative;
+    bottom: 500px;
+    left: 200px;
+    
+}
+
+.carousel-item .productdetails h2{
+    font-size: 50px
+}
+.carousel-item .productdetails p{
+    font-size: 25px;
+}
+.carousel-item .productdetails button{
+    font-size: 20px;
+    
+    padding: 10px 20px;
+}
+.carousel-item .productdetails h2+p{
+    margin: 40px auto;
+}
+
+
+.featuredproducts h2{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.carousel-track .product-card img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.carousel-track{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 80px;
+}
+
+.carousel-track .product-card{
+    text-align: center;
+}
+
+.product-card p{
+    font-size: 25px;
+    margin: 45px auto;
+}
+.product-card p span{
+    font-size: 20px;
+    color: gray;
+    text-decoration: line-through;
+}
+.topproducts h2{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.topproducts .header button{
+    border: none;
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+.topproducts .header{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 500px;
+}
+

@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(43, 42, 42);
+    background-color: #1a1a1a;
     color: white;
 }
 header{
@@ -103,12 +103,75 @@ header h2{
 
 .topproducts .header button{
     border: none;
-    background-color: rgb(43, 42, 42);
+    background-color: #1a1a1a;
     color: white;
+    font-size: 27px;
+    font-weight: lighter;
 }
 .topproducts .header{
     display: flex;
     justify-content: space-around;
-    margin: 50px 500px;
+    margin: 50px 450px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+
+    
+}
+.card{
+   
+    margin: 8px auto;
+    background-color: #1a1a1a;
+    padding:  40px;
+    background-color: rgb(43, 42, 42)
+
 }
 
+.card img{
+    width: 300px;
+    height: 300px;
+    margin: auto 30px;
+}
+
+.card i{
+    color: red;
+}
+
+.card button{
+    width: 100%;
+    background-color: red;
+    color: white;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.card h3{
+    font-size: 40px;
+}
+
+.card p{
+    font-size: 40px;
+}
+
+.card p span{
+    font-size: 30px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.card:last-child{
+    width: 442px;
+    
+}
+.card:last-child p{
+    margin:60% auto;
+}
+.card h3+p{
+    font-size: 20px;
+}

@@ -175,3 +175,12 @@ header h2{
 .card h3+p{
     font-size: 20px;
 }
+.advantages h2{
+    margin:150px auto;
+    text-align: center;
+}
+.advlists{
+    display: flex;
+    justify-content: space-between;
+    margin:auto 60px;
+}

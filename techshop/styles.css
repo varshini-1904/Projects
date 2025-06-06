@@ -184,3 +184,35 @@ header h2{
     justify-content: space-between;
     margin:auto 60px;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:130px auto;
+    background-color: black;
+    
+}
+footer .subscription{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 60px 40px;
+}
+footer .subscription input{
+    display:inline-block;
+    width: 100%;
+}
+footer ul li{
+    list-style: none;
+    margin: 15px auto;
+}
+
+footer ul{
+    padding: 60px 40px;
+}
+
+footer ul h5{
+     margin: 25px auto;
+
+}
+

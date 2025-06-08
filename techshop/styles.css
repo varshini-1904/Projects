@@ -184,23 +184,34 @@ header h2{
     justify-content: space-between;
     margin:auto 60px;
 }
-footer{
+.footersection{
     display: flex;
     justify-content: space-between;
+   
+}
+footer{
     margin:130px auto;
     background-color: black;
     
+
 }
+
 footer .subscription{
     width: 450px;
     display: flex;
     flex-direction: column;
     align-self: center;
-    padding: 60px 40px;
+    padding: 25px 40px;
 }
 footer .subscription input{
     display:inline-block;
     width: 100%;
+    margin: 10px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
 }
 footer ul li{
     list-style: none;
@@ -208,7 +219,7 @@ footer ul li{
 }
 
 footer ul{
-    padding: 60px 40px;
+    padding: 25px 40px;
 }
 
 footer ul h5{
@@ -216,3 +227,111 @@ footer ul h5{
 
 }
 
+.footersection .subscription button{
+    background-color: red;
+    color: white;
+    width: 180px;
+    margin: 10px;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.socialmedia-accounts{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    align-self: center;
+    
+}
+
+.socialmedia-accounts .icons i{
+    margin: 0px 10px;
+}
+
+.product .imgviews img{
+    height: 150px;
+    width: 150px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.product .imgviews{
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+    display: flex;
+    margin: 10px;
+}
+.product .product-img img{
+    height: 1000px;
+    width: 1000px;
+}
+.product .product-inf{
+    width: 800px;
+}
+.product .product-inf h3{
+    font-size: 50px;
+    margin: 5px auto;
+    
+}
+.product .product-inf p{
+    font-size: 30px;
+    margin: 5px;
+    
+    
+}
+
+.product-inf i{
+    margin: 30px 0;
+    color: red;
+
+}
+
+.product-inf hr{
+    height: 1px;
+    margin: 40px auto;
+    border: none;
+    background-color: gray;
+}
+.product .product-inf h4{
+    font-size: 50px;
+    margin: 20px auto;
+
+}
+.product .product-inf h4 span{
+    font-size: 30px;
+    color: gray;
+    text-decoration: line-through;
+}
+.product .product-inf h4+p{
+    color: green;
+}
+.product-inf p+p{
+    font-size: 20px;
+    color: gray;
+}
+.product-inf hr+p{
+    margin: 20px auto;
+}
+.product-inf div{
+    font-size: 20px;
+    border: 1px solid gray;
+}
+.product-inf button{
+    width: 250px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+
+}
+.headbuttons{
+    display: flex;
+    margin: 200px;
+}

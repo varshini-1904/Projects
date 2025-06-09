@@ -333,5 +333,194 @@ footer ul h5{
 }
 .headbuttons{
     display: flex;
-    margin: 200px;
+    margin: auto 800px;
+    justify-content: space-between;
+}
+
+
+
+.modal:target {
+  display: block;
+}
+
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 10% auto;
+  padding: 20px;
+  width: 600px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+}
+.modal-content h2{
+    text-align: left;
+    margin: 10px 0;
+
+}
+
+
+.modal .close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.modal-content form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+}
+
+.modal-content form>button{
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.orsection {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+.orsection hr {
+  flex: 1;
+  border: 0.5px solid #444;
+}
+.or-section span {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.social-buttons button {
+  
+  margin: 5px;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  
+}
+.facebook { background-color: #3b5998; }
+.google   { background-color: #db4437; }
+.twitter  { background-color: #1da1f2; }
+
+.cartitems{
+    overflow-y: scroll;
+    height: 600px;
+    width: 1100px;
+    margin: 40px;
+    background-color: #222121;
+}
+.cartitems img{
+    height: 200px;
+    width: 200px;
+}
+.cartitems .item{
+    display: flex;
+    
+    justify-content: space-around;
+     margin:50px;
+
+}
+
+.cartitems::-webkit-scrollbar-track{
+  background-color: #888; 
+  border-radius: 10px;
+}
+.quantity-selector {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1e1e1e;  
+  border-radius: 5px;
+  padding: 5px 10px;
+  gap: 10px;
+}
+
+.qty-btn {
+  background-color: transparent;
+  color: #ccc;
+  border: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+
+.qty-number {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main{
+    display: flex;
+    
+}
+.ordersummary{
+    margin: 0 40px;
+}
+    
+.pricesummary{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.ordersummary h3{
+    margin: 50px;
+
+}
+.pricesummary ul li{
+    margin: 20px 0;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.pricesummary .price li{
+    margin-left: 400px;
+
+}
+.pricesummary ul{
+    padding: 0;
+    margin: 0;
+}
+.totalprice{
+    display: flex;
+    justify-content: space-between;
+}
+.ordersummary hr{
+    margin: 0;
+
+}
+
+.ordersummary button{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
 }

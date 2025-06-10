@@ -1,4 +1,7 @@
-
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
 body{
     background-color: #1a1a1a;
     color: white;
@@ -9,11 +12,18 @@ header{
     align-items: center;
     margin: 40px;
     color: white;
+    
+    
 }
 header h2{
     font-size: 30px;
 }
-
+header .fa-user{
+    color: white;
+}
+header .fa-shopping-cart{
+    color: white;
+}
 
 .headicons i{
     margin: 0px 30px;
@@ -66,9 +76,9 @@ header h2{
 }
 
 
-.featuredproducts h2{
+/*.featuredproducts h2{
     text-align: center;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .carousel-track .product-card img{
@@ -96,9 +106,133 @@ header h2{
     color: gray;
     text-decoration: line-through;
 }
+*/
+.featuredproducts{
+    background-color: #1a1a1a;
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.featuredproducts h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    padding: 20px;
+    border-radius: 50px;
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+.product-card, .product-card-middle, .product-card-last{
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+
+.product-card-last{
+    width: 200px;
+}
+.product-card-last img{
+    width: 100%;
+    margin: 30px auto;
+    
+}
+.product-card-last h4{
+    font-size: 16px; 
+    font-weight: lighter;
+    margin: 10px 0;
+}
+.product-card-last p span{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+.product-card-last p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.product-card {
+    width: 300px; 
+}
+
+.product-card h4 {
+    font-size: 20px; 
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+.product-card p {
+    font-size: 23px; 
+    font-weight: lighter;
+}
+
+
+
+.product-card p span {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 16px;
+}
+
+.product-card-middle {
+    width: 400px; 
+    order: 0; 
+}
+
+.product-card-middle h4 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
+.product-card-middle img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.product-card-middle p {
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.product-card-middle p span {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 18px;
+}
+
+.topproducts .header .All{
+    background-color: red;
+    width: 80px;
+    border-radius: 5px;
+}
 .topproducts h2{
     text-align: center;
-    margin: 50px auto;
+    margin: 100px auto;
+}
+.relatedproducts h2{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 30px;
 }
 
 .topproducts .header button{
@@ -121,19 +255,25 @@ header h2{
 
     
 }
+.card a{
+    color: white;
+    text-decoration: none;
+}
 .card{
    
     margin: 8px auto;
     background-color: #1a1a1a;
     padding:  40px;
-    background-color: rgb(43, 42, 42)
-
+    border: 1px solid gray;
+    
 }
 
 .card img{
     width: 300px;
     height: 300px;
-    margin: auto 30px;
+    margin: auto 30px 40px 30px;
+   
+
 }
 
 .card i{
@@ -165,15 +305,17 @@ header h2{
     color: gray;
 }
 
-.card:last-child{
+.topproducts .card:last-child{
     width: 442px;
     
 }
-.card:last-child p{
+.topproducts .card:last-child p{
     margin:60% auto;
+    align-items: center;
 }
 .card h3+p{
     font-size: 20px;
+    
 }
 .advantages h2{
     margin:150px auto;
@@ -184,13 +326,24 @@ header h2{
     justify-content: space-between;
     margin:auto 60px;
 }
+.advlists p{
+    margin:auto 40px;
+}
+.advlists h3{
+    font-size: 30px;
+
+}
+
+.advlists i{
+    color: red;
+}
 .footersection{
     display: flex;
     justify-content: space-between;
    
 }
 footer{
-    margin:130px auto;
+    margin-top:130px;
     background-color: black;
     
 
@@ -260,11 +413,14 @@ footer ul h5{
 .product .imgviews{
     display: flex;
     flex-direction: column;
+    width: 300px;
+    
 }
 
 .product{
     display: flex;
     margin: 10px;
+    align-items: center;
 }
 .product .product-img img{
     height: 1000px;
@@ -317,10 +473,22 @@ footer ul h5{
 .product-inf hr+p{
     margin: 20px auto;
 }
-.product-inf div{
-    font-size: 20px;
-    border: 1px solid gray;
+.product-inf .discounts {
+    display: flex;
+    gap: 80px;
+    margin: 30px auto;
 }
+    
+.product-inf .discounts div{
+    border: 1px solid gray;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+
+
 .product-inf button{
     width: 250px;
     height: 50px;
@@ -333,11 +501,34 @@ footer ul h5{
 }
 .headbuttons{
     display: flex;
-    margin: auto 800px;
+    margin: 100px 600px;
     justify-content: space-between;
 }
+.headbuttons .specificationbutton{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+.headbuttons button{
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
 
+.details{
+    display: flex;
+}
+.details ul li{
+    list-style: none;
+    margin: 30px auto;
+}
 
+.details .specifications li{
+    text-align: right;
+    margin-left: 425px;
+    font-weight: bold;
+}
 
 .modal:target {
   display: block;
@@ -444,7 +635,15 @@ footer ul h5{
      margin:50px;
 
 }
-
+.item .content h3 span{
+    font-size: 22px;
+    color: gray;
+    text-decoration: line-through;
+    margin: 10px;
+}
+.item .content h3{
+    margin: 40px auto;
+}
 .cartitems::-webkit-scrollbar-track{
   background-color: #888; 
   border-radius: 10px;
@@ -503,6 +702,10 @@ main{
     margin-left: 400px;
 
 }
+.pricesummary .price span{
+    color: green;
+    font-size: 20px;
+}
 .pricesummary ul{
     padding: 0;
     margin: 0;
@@ -523,4 +726,5 @@ main{
     color: white;
     font-size: 20px;
     border: none;
+    border-radius: 5px;
 }
